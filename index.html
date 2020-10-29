@@ -13,22 +13,57 @@
 <body>
   <div class="modal">
     <div class="modal__content">
-      <form class="form" action="" method="POST">
-        <div class="form__group">
-          <label class="form__label" for="username">Username</label>
-          <input class="form__input" type="text" name="username" id="username" required autocomplete="off">
-        </div>
-        <div class="form__group">
-          <label class="form__label" for="password">Password</label>
-          <input class="form__input" type="password" name="password" id="password" required autocomplete="off">
-        </div>
-        <div class="form__group">
-          <label class="form__label">
-            <input class="form__checkbox" type="checkbox" name="checkbox">
-            Keep me signed in
-          </label>
-        </div>
-      </form>
+      
+      <input type="radio" name="tab" id="sign-in" checked>
+      <label for="sign-in">Sign in</label>
+
+      <input type="radio" name="tab" id="join-us">
+      <label for="join-us">Join us</label>
+
+      <div class="tabs">
+        <form class="form" action="" method="POST" name="sign-in">
+          <div class="form__group">
+            <label class="form__label" for="username">Username</label>
+            <input class="form__input" type="text" name="username" id="username" required autocomplete="off">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input" type="password" name="password" id="password" required autocomplete="off">
+          </div>
+          <div class="form__group">
+            <input class="form__checkbox" id="checkbox" type="checkbox" name="checkbox" checked>
+            <label class="form__label form__label--checkbox" for="checkbox">
+              Keep me signed in
+            </label>
+          </div>
+          <div class="form__btns">
+            <button class="form__btn" type="submit">Sign in</button>
+          </div>
+        </form>
+        <form class="form" action="" method="POST" name="join-us">
+          <div class="form__group">
+            <label class="form__label" for="username">Username</label>
+            <input class="form__input" type="text" name="username" id="username" required autocomplete="off">
+          </div>
+          <div class="form__group">
+            <label class="form__label" for="password">Password</label>
+            <input class="form__input" type="password" name="password" id="password" required autocomplete="off">
+          </div>
+          <div class="form__group">
+            <input class="form__checkbox" id="checkbox" type="checkbox" name="checkbox" checked>
+            <label class="form__label form__label--checkbox" for="checkbox">
+              Keep me signed in
+            </label>
+          </div>
+          <div class="form__btns">
+            <button class="form__btn" type="submit">Sign in</button>
+          </div>
+        </form>
+      </div>
+      <div class="modal__links">
+        <a class="modal__link" href="#">Forgot password</a>
+        <a class="modal__link" href="#">Create an account</a>
+      </div>
     </div>
   </div>
 </body>
